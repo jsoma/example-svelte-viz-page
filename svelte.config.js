@@ -11,7 +11,9 @@ const config = {
 	preprocess: [importAssets(), preprocess()],
 
 	kit: {
-		// base: dev ? '' : '/your-repo-name', // If building for GitHub pages
+		paths: {
+			base: process.env.NODE_ENV == 'development' ? '' : '/example-svelte-viz-page' // If building for GitHub pages
+		},
 		adapter: adapter({
 			// default options are shown
 			pages: 'docs',
