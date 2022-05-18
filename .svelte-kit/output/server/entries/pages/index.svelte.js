@@ -7,7 +7,7 @@ function readable(value, start) {
 }
 function writable(value, start = noop) {
   let stop;
-  const subscribers = new Set();
+  const subscribers = /* @__PURE__ */ new Set();
   function set(new_value) {
     if (safe_not_equal(value, new_value)) {
       value = new_value;

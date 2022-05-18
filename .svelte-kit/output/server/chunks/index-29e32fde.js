@@ -4,7 +4,7 @@ function run(fn) {
   return fn();
 }
 function blank_object() {
-  return Object.create(null);
+  return /* @__PURE__ */ Object.create(null);
 }
 function run_all(fns) {
   fns.forEach(run);
@@ -42,7 +42,7 @@ function getContext(key) {
   return get_current_component().$$.context.get(key);
 }
 Promise.resolve();
-const boolean_attributes = new Set([
+const boolean_attributes = /* @__PURE__ */ new Set([
   "allowfullscreen",
   "allowpaymentrequest",
   "async",
@@ -114,9 +114,9 @@ function create_ssr_component(fn) {
     return html;
   }
   return {
-    render: (props = {}, { $$slots = {}, context = new Map() } = {}) => {
+    render: (props = {}, { $$slots = {}, context = /* @__PURE__ */ new Map() } = {}) => {
       on_destroy = [];
-      const result = { title: "", head: "", css: new Set() };
+      const result = { title: "", head: "", css: /* @__PURE__ */ new Set() };
       const html = $$render(result, props, {}, $$slots, context);
       run_all(on_destroy);
       return {

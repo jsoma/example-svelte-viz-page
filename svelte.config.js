@@ -4,6 +4,8 @@ import preprocess from 'svelte-preprocess';
 import dsv from '@rollup/plugin-dsv';
 import importAssets from 'svelte-preprocess-import-assets'
 
+const dev = process.env.NODE_ENV === 'development';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
@@ -12,7 +14,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: process.env.NODE_ENV == 'development' ? '' : '/example-svelte-viz-page' // If building for GitHub pages
+			base: dev ? '' : '/example-svelte-viz-page',
 		},
 		adapter: adapter({
 			// default options are shown

@@ -1,7 +1,7 @@
 {
-  ".svelte-kit/build/app.js": {
-    "file": "app.js",
-    "src": ".svelte-kit/build/app.js",
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
     "isEntry": true,
     "imports": [
       "_index-29e32fde.js"

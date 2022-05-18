@@ -1,11 +1,11 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-19126456.js",
+    "file": "start-c7b8f8c9.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-d253b1c8.js",
-      "_preload-helper-a55543dd.js"
+      "_index-898d2b75.js",
+      "_index-02f2276a.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -14,57 +14,57 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-728ac976.js",
+    "file": "pages/__layout.svelte-4470b4f6.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-d253b1c8.js"
+      "_index-898d2b75.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-12531fb8.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-515a8d20.js",
+    "file": "error.svelte-ded9c250.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-d253b1c8.js"
+      "_index-898d2b75.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-ab4b046e.js",
+    "file": "pages/index.svelte-832219af.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-d253b1c8.js",
-      "_preload-helper-a55543dd.js"
+      "_index-898d2b75.js",
+      "_index-02f2276a.js"
     ],
     "dynamicImports": [
       "src/ai2html/countries.svelte"
     ],
     "css": [
-      "assets/pages/index.svelte-847fea41.css"
+      "assets/pages/index.svelte-02a4c2d3.css"
     ]
   },
-  "_vendor-d253b1c8.js": {
-    "file": "chunks/vendor-d253b1c8.js",
-    "css": [
-      "assets/vendor-3331f240.css"
-    ]
+  "_index-898d2b75.js": {
+    "file": "chunks/index-898d2b75.js"
   },
-  "_preload-helper-a55543dd.js": {
-    "file": "chunks/preload-helper-a55543dd.js"
+  "_index-02f2276a.js": {
+    "file": "chunks/index-02f2276a.js",
+    "imports": [
+      "_index-898d2b75.js"
+    ]
   },
   "src/ai2html/countries.svelte": {
-    "file": "chunks/countries-86af5fa4.js",
+    "file": "chunks/countries-12f2f1c6.js",
     "src": "src/ai2html/countries.svelte",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-d253b1c8.js"
+      "_index-898d2b75.js"
     ],
     "css": [
       "assets/countries-2670d04b.css"

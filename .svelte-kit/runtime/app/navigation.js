@@ -1,7 +1,5 @@
-import { renderer, router as router$1 } from '../client/singletons.js';
+import { renderer, router } from '../client/singletons.js';
 import { g as get_base_uri } from '../chunks/utils.js';
-
-const router = /** @type {import('../client/router').Router} */ (router$1);
 
 /**
  * @param {string} name
@@ -47,8 +45,8 @@ async function invalidate_(resource) {
 /**
  * @type {import('$app/navigation').prefetch}
  */
-function prefetch_(href) {
-	return router.prefetch(new URL(href, get_base_uri(document)));
+async function prefetch_(href) {
+	await router.prefetch(new URL(href, get_base_uri(document)));
 }
 
 /**

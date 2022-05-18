@@ -3,7 +3,7 @@ export const manifest = {
 	assets: new Set(["favicon.png","robots.txt"]),
 	_: {
 		mime: {".png":"image/png",".txt":"text/plain"},
-		entry: {"file":"start-19126456.js","js":["start-19126456.js","chunks/vendor-d253b1c8.js","chunks/preload-helper-a55543dd.js"],"css":["assets/vendor-3331f240.css"]},
+		entry: {"file":"start-c7b8f8c9.js","js":["start-c7b8f8c9.js","chunks/index-898d2b75.js","chunks/index-02f2276a.js"],"css":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
@@ -15,6 +15,7 @@ export const manifest = {
 				pattern: /^\/$/,
 				params: null,
 				path: "/",
+				shadow: null,
 				a: [0,2],
 				b: [1]
 			}
