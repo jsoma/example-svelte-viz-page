@@ -2316,7 +2316,7 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 	<p class="${"svelte-61llpi"}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus enim, hendrerit eu risus a, convallis semper erat. Vestibulum id tristique massa, fermentum efficitur felis.</p>
 	<p class="${"svelte-61llpi"}">Aliquam laoreet ultricies tortor nec euismod.</p>
-	
+	<p class="${"svelte-61llpi"}">This example here is using <a href="${"https://layercake.graphics/"}">layercake</a> to build a graphic from <a href="${"https://github.com/jsoma/example-svelte-viz-page/blob/main/src/routes/_data/points.csv"}">points.csv</a></p>
 	<div class="${"chart-container svelte-61llpi"}">${validate_component(LayerCake, "LayerCake").$$render($$result, {
     padding: { right: 10, bottom: 20, left: 25 },
     x: "year",
@@ -2337,7 +2337,7 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}</div>
 
 	<p class="${"svelte-61llpi"}">Fusce a nisl finibus, finibus dui eu, maximus nunc. Ut pharetra sem rhoncus velit vulputate, nec mollis justo pharetra.</p>
-	<p class="${"svelte-61llpi"}">Vivamus fringilla semper lectus, ut interdum erat dapibus ac. Cras porttitor mauris sit amet lorem accumsan, nec feugiat mi facilisis. Curabitur interdum sit amet mi sed faucibus. Vivamus ac efficitur est. Nunc fermentum nulla sit amet enim feugiat gravida nec sed massa. Aliquam eget erat et ante auctor placerat. Vivamus nulla nibh, facilisis ac justo in, blandit efficitur dui.</p>	
+	<p class="${"svelte-61llpi"}">Down here we&#39;re going to embed some ai2html content.</p>	
 
 	${validate_component(Ai2html, "Ai2html").$$render($$result, {
     name: "countries",

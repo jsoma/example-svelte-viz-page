@@ -36,7 +36,7 @@
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus enim, hendrerit eu risus a, convallis semper erat. Vestibulum id tristique massa, fermentum efficitur felis.</p>
 	<p>Aliquam laoreet ultricies tortor nec euismod.</p>
-	
+	<p>This example here is using <a href="https://layercake.graphics/">layercake</a> to build a graphic from <a href="https://github.com/jsoma/example-svelte-viz-page/blob/main/src/routes/_data/points.csv">points.csv</a></p>
 	<div class="chart-container">
 		<LayerCake
 			padding={{ right: 10, bottom: 20, left: 25 }}
@@ -55,7 +55,7 @@
 	</div>
 
 	<p>Fusce a nisl finibus, finibus dui eu, maximus nunc. Ut pharetra sem rhoncus velit vulputate, nec mollis justo pharetra.</p>
-	<p>Vivamus fringilla semper lectus, ut interdum erat dapibus ac. Cras porttitor mauris sit amet lorem accumsan, nec feugiat mi facilisis. Curabitur interdum sit amet mi sed faucibus. Vivamus ac efficitur est. Nunc fermentum nulla sit amet enim feugiat gravida nec sed massa. Aliquam eget erat et ante auctor placerat. Vivamus nulla nibh, facilisis ac justo in, blandit efficitur dui.</p>	
+	<p>Down here we're going to embed some ai2html content.</p>	
 
 	<Ai2html name="countries" description="An example chart to show off the framework"></Ai2html>
 </div>
