@@ -35,8 +35,7 @@
 
     // feel free to replace throttle with _.throttle, if available
     window.addEventListener("resize", throttle(resizer, 200));
-    resizer()
-    setTimeout(resizer, 1000);
+    setTimeout(resizer, 250)
 
     function throttle(func, wait) {
       // from underscore.js
@@ -88,6 +87,10 @@
 </div>
 
 <style>
+  .ai2html-container {
+    padding-bottom: 1em;
+  }
+
   .sr-only {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);

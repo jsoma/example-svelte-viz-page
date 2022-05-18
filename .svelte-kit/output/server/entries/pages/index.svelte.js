@@ -1,4 +1,37 @@
-import { n as noop, a as safe_not_equal, b as subscribe, r as run_all, i as is_function, c as create_ssr_component, d as set_store_value, s as setContext, f as add_styles, g as add_attribute, h as getContext, e as escape, v as validate_component, m as missing_component, j as each } from "../../chunks/index-29e32fde.js";
+import { c as create_ssr_component, e as escape, v as validate_component, m as missing_component, n as noop, a as safe_not_equal, b as subscribe, r as run_all, i as is_function, d as set_store_value, s as setContext, f as add_styles, g as add_attribute, h as getContext, j as each } from "../../chunks/index-29e32fde.js";
+var Title_svelte_svelte_type_style_lang = "";
+const css$7 = {
+  code: "h1.svelte-g3uk83{font-size:3em;margin-top:0}h3.svelte-g3uk83{font-style:italic;font-weight:normal;padding-top:1em}h1.svelte-g3uk83,h3.svelte-g3uk83{max-width:700px;margin:0 auto}div.svelte-g3uk83{padding:2em;background-color:#85FFBD;background-image:linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%)}",
+  map: null
+};
+const Title = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { title } = $$props;
+  let { subtitle } = $$props;
+  if ($$props.title === void 0 && $$bindings.title && title !== void 0)
+    $$bindings.title(title);
+  if ($$props.subtitle === void 0 && $$bindings.subtitle && subtitle !== void 0)
+    $$bindings.subtitle(subtitle);
+  $$result.css.add(css$7);
+  return `<div class="${"svelte-g3uk83"}"><h1 class="${"svelte-g3uk83"}">${escape(title)}</h1>
+    <h3 class="${"svelte-g3uk83"}">${escape(subtitle)}</h3></div>`;
+});
+var Ai2html_svelte_svelte_type_style_lang = "";
+const css$6 = {
+  code: ".ai2html-container.svelte-8oongr{padding-bottom:1em}.sr-only.svelte-8oongr{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}",
+  map: null
+};
+const Ai2html = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { name } = $$props;
+  let { description } = $$props;
+  if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+    $$bindings.name(name);
+  if ($$props.description === void 0 && $$bindings.description && description !== void 0)
+    $$bindings.description(description);
+  $$result.css.add(css$6);
+  return `<div class="${"ai2html-container svelte-8oongr"}"><div class="${"sr-only svelte-8oongr"}">${escape(description)}</div>
+  <div aria-hidden="${"true"}">${validate_component(missing_component, "svelte:component").$$render($$result, {}, {}, {})}</div>
+</div>`;
+});
 const subscriber_queue = [];
 function readable(value, start) {
   return {
@@ -1354,7 +1387,7 @@ var defaultReverses = {
   r: false
 };
 var LayerCake_svelte_svelte_type_style_lang = "";
-const css$6 = {
+const css$5 = {
   code: ".layercake-container.svelte-vhzpsp,.layercake-container.svelte-vhzpsp *{box-sizing:border-box}.layercake-container.svelte-vhzpsp{width:100%;height:100%}",
   map: null
 };
@@ -1721,7 +1754,7 @@ const LayerCake = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     $$bindings.flatData(flatData);
   if ($$props.custom === void 0 && $$bindings.custom && custom !== void 0)
     $$bindings.custom(custom);
-  $$result.css.add(css$6);
+  $$result.css.add(css$5);
   {
     if (x)
       config.x = x;
@@ -1918,7 +1951,7 @@ ${ssr === true || typeof window !== "undefined" ? `<div class="${"layercake-cont
 });
 var Html_svelte_svelte_type_style_lang = "";
 var Svg_svelte_svelte_type_style_lang = "";
-const css$5 = {
+const css$4 = {
   code: "svg.svelte-u84d8d{position:absolute;top:0;left:0;overflow:visible}",
   map: null
 };
@@ -1945,7 +1978,7 @@ const Svg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.pointerEvents(pointerEvents);
   if ($$props.viewBox === void 0 && $$bindings.viewBox && viewBox !== void 0)
     $$bindings.viewBox(viewBox);
-  $$result.css.add(css$5);
+  $$result.css.add(css$4);
   $$unsubscribe_containerWidth();
   $$unsubscribe_containerHeight();
   $$unsubscribe_padding();
@@ -1957,23 +1990,6 @@ const Svg = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}${add_attribute("this", element, 0)}><defs>${slots.defs ? slots.defs({ element }) : ``}</defs><g class="${"layercake-layout-svg_g"}" transform="${"translate(" + escape($padding.left) + ", " + escape($padding.top) + ")"}"${add_attribute("this", innerElement, 0)}>${slots.default ? slots.default({ element }) : ``}</g></svg>`;
 });
 var ScaledSvg_svelte_svelte_type_style_lang = "";
-var Ai2html_svelte_svelte_type_style_lang = "";
-const css$4 = {
-  code: ".sr-only.svelte-1pprwsh{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}",
-  map: null
-};
-const Ai2html = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { name } = $$props;
-  let { description } = $$props;
-  if ($$props.name === void 0 && $$bindings.name && name !== void 0)
-    $$bindings.name(name);
-  if ($$props.description === void 0 && $$bindings.description && description !== void 0)
-    $$bindings.description(description);
-  $$result.css.add(css$4);
-  return `<div class="${"ai2html-container"}"><div class="${"sr-only svelte-1pprwsh"}">${escape(description)}</div>
-  <div aria-hidden="${"true"}">${validate_component(missing_component, "svelte:component").$$render($$result, {}, {}, {})}</div>
-</div>`;
-});
 var Line_svelte_svelte_type_style_lang = "";
 const css$3 = {
   code: ".path-line.svelte-1a99x5h{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-width:2}",
@@ -2307,17 +2323,25 @@ var points = [
 ];
 var index_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".container.svelte-61llpi{max-width:960px;margin:0 auto}.chart-container.svelte-61llpi{max-width:500px;height:200px;margin:0 auto}p.svelte-61llpi{max-width:700px;margin:0 auto;padding:1.3em 0;font-size:16px;line-height:1.6}",
+  code: ".container.svelte-x4p5vb{max-width:960px;margin:0 auto;padding:0 2em}.chart-container.svelte-x4p5vb{max-width:500px;height:200px;margin:0 auto}p.svelte-x4p5vb{max-width:700px;margin:0 auto;padding:1.3em 0;font-size:16px;line-height:1.6}",
   map: null
 };
 const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="${"container svelte-61llpi"}"><h1>This is our webpage with some content in it</h1>
+  return `${validate_component(Title, "Title").$$render($$result, {
+    title: "This is our webpage with some content on it",
+    subtitle: "It even includes graphics! Isn't it amazing?"
+  }, {}, {})}
 
-	<p class="${"svelte-61llpi"}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus enim, hendrerit eu risus a, convallis semper erat. Vestibulum id tristique massa, fermentum efficitur felis.</p>
-	<p class="${"svelte-61llpi"}">Aliquam laoreet ultricies tortor nec euismod.</p>
-	<p class="${"svelte-61llpi"}">This example here is using <a href="${"https://layercake.graphics/"}">layercake</a> to build a graphic from <a href="${"https://github.com/jsoma/example-svelte-viz-page/blob/main/src/routes/_data/points.csv"}">points.csv</a></p>
-	<div class="${"chart-container svelte-61llpi"}">${validate_component(LayerCake, "LayerCake").$$render($$result, {
+<div class="${"container svelte-x4p5vb"}"><p class="${"svelte-x4p5vb"}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus enim, hendrerit eu risus a, convallis semper
+    erat. Vestibulum id tristique massa, fermentum efficitur felis.
+  </p>
+  <p class="${"svelte-x4p5vb"}">Aliquam laoreet ultricies tortor nec euismod.</p>
+  <p class="${"svelte-x4p5vb"}">This example here is using <a href="${"https://layercake.graphics/"}">layercake</a>
+    to build a graphic from
+    <a href="${"https://github.com/jsoma/example-svelte-viz-page/blob/main/src/routes/_data/points.csv"}">points.csv</a></p>
+
+  <div class="${"chart-container svelte-x4p5vb"}">${validate_component(LayerCake, "LayerCake").$$render($$result, {
     padding: { right: 10, bottom: 20, left: 25 },
     x: "year",
     y: "amount",
@@ -2328,20 +2352,48 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Svg, "Svg").$$render($$result, {}, {}, {
         default: () => {
           return `${validate_component(AxisX, "AxisX").$$render($$result, {}, {}, {})}
-				${validate_component(AxisY, "AxisY").$$render($$result, {}, {}, {})}
-				${validate_component(Line, "Line").$$render($$result, {}, {}, {})}
-				${validate_component(Area, "Area").$$render($$result, {}, {}, {})}`;
+        ${validate_component(AxisY, "AxisY").$$render($$result, {}, {}, {})}
+        ${validate_component(Line, "Line").$$render($$result, {}, {}, {})}
+        ${validate_component(Area, "Area").$$render($$result, {}, {}, {})}`;
         }
       })}`;
     }
   })}</div>
 
-	<p class="${"svelte-61llpi"}">Fusce a nisl finibus, finibus dui eu, maximus nunc. Ut pharetra sem rhoncus velit vulputate, nec mollis justo pharetra.</p>
-	<p class="${"svelte-61llpi"}">Down here we&#39;re going to embed some ai2html content.</p>	
+  <p class="${"svelte-x4p5vb"}">Fusce a nisl finibus, finibus dui eu, maximus nunc. Ut pharetra sem rhoncus velit vulputate, nec mollis justo
+    pharetra.
+  </p>
+  <p class="${"svelte-x4p5vb"}">Down here we&#39;re going to embed some ai2html content.</p>
 
-	${validate_component(Ai2html, "Ai2html").$$render($$result, {
+  ${validate_component(Ai2html, "Ai2html").$$render($$result, {
     name: "countries",
     description: "An example chart to show off the framework"
-  }, {}, {})}</div>`;
+  }, {}, {})}
+
+  <p class="${"svelte-x4p5vb"}">And maybe another LayerCake chart?</p>
+  <p class="${"svelte-x4p5vb"}">This time we&#39;ll play with <strong>the options</strong> a little bit. While you can read <a href="${"https://layercake.graphics/guide"}">the documentation</a> if you&#39;d like, you can also just take a look at <a href="${"https://github.com/jsoma/example-svelte-viz-page/tree/main/src/routes/_components"}">the components&#39; code</a> to see if you can figure the options out.</p>
+
+  <div class="${"chart-container svelte-x4p5vb"}">${validate_component(LayerCake, "LayerCake").$$render($$result, {
+    padding: { right: 0, bottom: 20, left: 0 },
+    yDomain: [0, 15],
+    x: "year",
+    y: "amount",
+    data: points
+  }, {}, {
+    default: () => {
+      return `${validate_component(Svg, "Svg").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Line, "Line").$$render($$result, { stroke: "black" }, {}, {})}
+        ${validate_component(Area, "Area").$$render($$result, { fill: "#FFFB7D" }, {}, {})}
+        ${validate_component(AxisY, "AxisY").$$render($$result, { dxTick: "10" }, {}, {})}`;
+        }
+      })}`;
+    }
+  })}</div></div>
+
+${validate_component(Title, "Title").$$render($$result, {
+    title: "We can even add another title if we want!",
+    subtitle: "I'm not sure why we would, but we can."
+  }, {}, {})}`;
 });
 export { Routes as default };
